@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>videos</title>
+</head>
+<body>
+    
+    <div>
+        <center><h1>VIDEOS LIST </h1></center>
+        <table>
+            <thead>
+                <tr>
+                    <th>Video Title</th>
+                    <th>Views</th>
+                    <th>Likes</th>
+                    <th>Comments</th>
+                    <th>YouTube Link</th>
+                    <th>Thumbnail Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for i in var %}
+                <tr>
+                    {% for j in i['video_links']}
+                    <td>
+                        {{i['video_title']}}
+                    </td>
+                    {%endfor%}
+                </tr>
+                <!-- <tr>
+                    <td>
+                        <a href="{{i['video_links']}}"></a>
+                        Video Title : {{i['video_title']}}
+                    </td>
+                    <td>views : {{i['video_views']}}</td>
+                    <td>Likes : {{i['video_likes']}}</td>
+                    <td>Comments: {{i['video_comments']}}</td>
+                    <td>
+                        <a href="{{i['video_links']}}">
+                            CLICK HERE TO GO TO YOUTUBE CHANNEL
+                        </a>
+                    </td>
+                    <td>
+                        <a href="{{i['video_thumbnail']}}">
+                            CLICK HERE TO SEE THE IMAGE
+                        </a>
+                    </td>
+                </tr> -->
+                {% endfor %}
+            </tbody>
+        </table>
+        
+    </div>
+
+</body>
+</html>
