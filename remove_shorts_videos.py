@@ -52,7 +52,7 @@ def remove_shorts_videos(youtube, video_info, video_dict, channel_id):
 
     if __name__=='__main__':
         from googleapiclient.discovery import build
-        DEVELOPER_KEY = "AIzaSyAaeo-q3kZLtB8G6QKCvQoz6eB3J-oN2Cw"
+        DEVELOPER_KEY = YOUR_API_KEY
         YOUTUBE_API_SERVICE_NAME = "youtube"
         YOUTUBE_API_VERSION = "v3"
         youtube = build(YOUTUBE_API_SERVICE_NAME, YOUTUBE_API_VERSION, developerKey = DEVELOPER_KEY)   

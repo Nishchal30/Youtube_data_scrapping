@@ -13,7 +13,7 @@ logging.basicConfig(filename="youtube_scarpping_logs.log", level=logging.INFO, f
 
 try:
 
-    DEVELOPER_KEY = "AIzaSyAaeo-q3kZLtB8G6QKCvQoz6eB3J-oN2Cw"
+    DEVELOPER_KEY = YOUR_API_KEY
     YOUTUBE_API_SERVICE_NAME = "youtube"
     YOUTUBE_API_VERSION = "v3"
     youtube = build(YOUTUBE_API_SERVICE_NAME, YOUTUBE_API_VERSION, developerKey = DEVELOPER_KEY)   
